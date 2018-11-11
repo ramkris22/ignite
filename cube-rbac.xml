@@ -31,7 +31,7 @@
         <!-- Explicitly configure TCP discovery SPI to provide list of initial nodes. -->
         <property name="discoverySpi">
             <bean class="org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi">
-                <property name="ipFinder">
+                <property name=ipFinder.setMasterUrl("https://hlth591.hydc.sbc.com:6443")>
                     <!--
                         Enables Kubernetes IP finder with default settings.
                     -->
